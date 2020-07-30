@@ -75,9 +75,6 @@ extension LessonViewController: UIScrollViewDelegate {
             lessonScrollView.addSubview(slide)
         }
         
-<<<<<<< HEAD
-        //startChallengeButton.layer.cornerRadius = 10.0
-=======
         lessonScrollView.contentSize = CGSize(width: scrollWidth * CGFloat(contents.count), height: scrollHeight)
         lessonScrollView.contentSize.height = 1.0
         
@@ -87,7 +84,6 @@ extension LessonViewController: UIScrollViewDelegate {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         setIndicatorForCurrentPage()
->>>>>>> e08040cb5666e6c4b1fd978c1862256e0488e291
     }
     
     func setIndicatorForCurrentPage() {
