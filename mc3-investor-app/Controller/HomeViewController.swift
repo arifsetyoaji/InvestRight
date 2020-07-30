@@ -17,11 +17,12 @@ class HomeViewController: UIViewController {
     }
     
     let lessonData : [Lesson] = [
-        Lesson(name: "Outstanding Share", image: UIImage(named: "dummy_image"), isLock: false),
-        Lesson(name: "Find Liabilities", image: UIImage(named: "dummy_image"), isLock: true),
-        Lesson(name: "Find Equities", image: UIImage(named: "dummy_image"), isLock: true),
-        Lesson(name: "Calculate Book Value", image: UIImage(named: "dummy_image"), isLock: true),
-        Lesson(name: "Calculate Earning Ratio", image: UIImage(named: "dummy_image"), isLock: true),
+        Lesson(name: "Outstanding Share", image: UIImage(named: "1-lesson"), isLock: false),
+        Lesson(name: "Find Liabilities", image: UIImage(named: "2-lesson"), isLock: true),
+        Lesson(name: "Price to Equity Ratio", image: UIImage(named: "3-lesson"), isLock: true),
+        Lesson(name: "Price to Book Value", image: UIImage(named: "4-lesson"), isLock: true),
+        Lesson(name: "Debt to Equity Ratio", image: UIImage(named: "5-lesson"), isLock: true),
+        Lesson(name: "Margin of Safety", image: UIImage(named: "6-lesson"), isLock: true),
     ]
     
     @IBOutlet weak var lessonCollectionView: UICollectionView!
