@@ -137,22 +137,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="FxT-iB-J88" firstAttribute="centerX" secondItem="sPn-Kk-voT" secondAttribute="centerX" id="1kJ-na-5dT"/>
-                            <constraint firstItem="kEm-2J-YeX" firstAttribute="bottom" secondItem="SGy-5a-giu" secondAttribute="bottom" constant="55" id="E8T-11-PNj"/>
-                            <constraint firstItem="SGy-5a-giu" firstAttribute="centerX" secondItem="sPn-Kk-voT" secondAttribute="centerX" id="JDc-JW-2Sx"/>
-                            <constraint firstItem="FxT-iB-J88" firstAttribute="top" secondItem="kEm-2J-YeX" secondAttribute="top" constant="75" id="rum-P2-I6X"/>
+                            <constraint firstAttribute="centerX" secondItem="sPn-Kk-voT" secondAttribute="centerX" id="1kJ-na-5dT"/>
+                            <constraint firstAttribute="centerX" secondItem="sPn-Kk-voT" secondAttribute="centerX" id="JDc-JW-2Sx"/>
+                            <constraint firstAttribute="top" secondItem="kEm-2J-YeX" secondAttribute="top" constant="75" id="rum-P2-I6X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kEm-2J-YeX"/>
                     </view>
                     <navigationItem key="navigationItem" id="eSP-Sr-s68"/>
-                    <connections>
-                        <outlet property="contentImageView" destination="FxT-iB-J88" id="8bd-YF-2AQ"/>
-                        <outlet property="startChallengeButton" destination="SGy-5a-giu" id="fmm-hN-Yot"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8w-w6-hbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3457.971014492754" y="65.625"/>
+            <point key="canvasLocation" x="3633" y="-206"/>
         </scene>
         <!--PDFViewer-->
         <scene sceneID="Eid-Ww-7Mg">
