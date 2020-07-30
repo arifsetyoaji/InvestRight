@@ -15,12 +15,15 @@ class PDFViewController: UIViewController {
     
     var pdfView: PDFView!
     var document: PDFDocument!
-    var searchedItem: PDFSelection?
+    var highlightedArea: PDFAnnotation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPdf()
-        annotatePdf()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(extractAnnotation(notification:)), name: .PDFViewAnnotationHit, object: nil)
     }
 }
 
@@ -37,6 +40,8 @@ extension PDFViewController: PDFDocumentDelegate {
         document = PDFDocument(url: fileUrl!)
         pdfView.document = document
         pdfView.document?.delegate = self
+        
+        annotatePdf()
     }
     
     func annotatePdf() {
@@ -46,13 +51,16 @@ extension PDFViewController: PDFDocumentDelegate {
         
         pages.forEach { (page) in
             selections?.forEach({ selection in
-                let highlight = PDFAnnotation(bounds: selection.bounds(for: page), forType: .highlight, withProperties: nil)
-                highlight.endLineStyle = .square
-                highlight.color = .yellow
+                highlightedArea = PDFAnnotation(bounds: selection.bounds(for: page), forType: .highlight, withProperties: nil)
+                highlightedArea.endLineStyle = .square
+                highlightedArea.color = .yellow
 
-                page.addAnnotation(highlight)
+                page.addAnnotation(highlightedArea)
             })
         }
     }
     
+    @objc func extractAnnotation(notification: Notification) {
+        dismiss(animated: true, completion: nil)
+    }
 }

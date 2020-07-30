@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8w-w6-hbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3633" y="-206"/>
+            <point key="canvasLocation" x="3457.971014492754" y="65.625"/>
         </scene>
         <!--PDFViewer-->
         <scene sceneID="Eid-Ww-7Mg">
