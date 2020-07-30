@@ -39,7 +39,6 @@ class HomeViewController: UIViewController {
         
         navigationController?.isNavigationBarHidden = true
     }
-    
 
 }
 
@@ -74,18 +73,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        if let destinationVC = storyboard?.instantiateViewController(identifier: "LessonViewController") as? LessonViewController {
-            
-            
-            
-            destinationVC.lessonTitle = lessonData[indexPath.row].name
-            
-            print(destinationVC.lessonTitle!)
-            
-            self.navigationController?.pushViewController(destinationVC, animated: true)
+        performSegue(withIdentifier: "GoToLessonSegue", sender: lessonData[indexPath.row].name)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? LessonViewController {
+            destination.lessonTitle = sender as? String
         }
-        
     }
     
 }

@@ -109,50 +109,22 @@
                     <navigationItem key="navigationItem" id="w8Z-cu-CTt"/>
                     <connections>
                         <outlet property="lessonCollectionView" destination="Fcj-Si-l1Y" id="nky-iY-Jfo"/>
+                        <segue destination="tDd-bg-U6R" kind="show" identifier="GoToLessonSegue" id="bVY-ag-F7j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="niD-xn-tQC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2728.985507246377" y="65.625"/>
         </scene>
-        <!--Lesson View Controller-->
-        <scene sceneID="Ien-fg-Ya0">
+        <!--Lesson-->
+        <scene sceneID="3Mh-fm-Cyi">
             <objects>
-                <viewController storyboardIdentifier="LessonViewController" id="4I3-1h-bib" customClass="LessonViewController" customModule="mc3_investor_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sPn-Kk-voT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5q-Kf-Mmh">
-                                <rect key="frame" x="20" y="142" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33725490196078434" green="0.71372549019607845" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Show PDF">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="XlL-ab-nJp" kind="show" id="idx-hK-WGp"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="kEm-2J-YeX"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="eSP-Sr-s68"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s8w-w6-hbk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3457.971014492754" y="65.625"/>
-        </scene>
-        <!--PDFViewer-->
-        <scene sceneID="Eid-Ww-7Mg">
-            <objects>
-                <viewControllerPlaceholder storyboardName="PDFViewer" id="XlL-ab-nJp" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="5Oi-Xk-Aca"/>
+                <viewControllerPlaceholder storyboardName="Lesson" id="tDd-bg-U6R" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2fT-3m-JZv"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oWi-zM-ZbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPu-nP-AA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4220" y="15"/>
+            <point key="canvasLocation" x="3491" y="66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zjz-U0-dc4">

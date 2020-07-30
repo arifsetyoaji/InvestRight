@@ -19,6 +19,9 @@
 		7EAA938D24CFC6C200E59F6B /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA938C24CFC6C200E59F6B /* PDFViewController.swift */; };
 		7EAA938F24CFC72300E59F6B /* PDFViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA938E24CFC72300E59F6B /* PDFViewer.storyboard */; };
 		7EAA939224CFC7CE00E59F6B /* nasipadang.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA939124CFC7CE00E59F6B /* nasipadang.pdf */; };
+		7EADD46724D260F100248ECE /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EADD46624D260F100248ECE /* Lesson.storyboard */; };
+		7EADD46924D268E500248ECE /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EADD46824D268E500248ECE /* Challenge.storyboard */; };
+		7EADD46B24D2695600248ECE /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EADD46A24D2695600248ECE /* ChallengeViewController.swift */; };
 		835398F524BEDA6A0025E229 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835398F424BEDA6A0025E229 /* HomeViewController.swift */; };
 		835398F724BEDB770025E229 /* LessonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835398F624BEDB770025E229 /* LessonCell.swift */; };
 		835398F924BF4B230025E229 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835398F824BF4B230025E229 /* LessonViewController.swift */; };
@@ -39,6 +42,9 @@
 		7EAA938C24CFC6C200E59F6B /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		7EAA938E24CFC72300E59F6B /* PDFViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDFViewer.storyboard; sourceTree = "<group>"; };
 		7EAA939124CFC7CE00E59F6B /* nasipadang.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nasipadang.pdf; sourceTree = "<group>"; };
+		7EADD46624D260F100248ECE /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
+		7EADD46824D268E500248ECE /* Challenge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenge.storyboard; sourceTree = "<group>"; };
+		7EADD46A24D2695600248ECE /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
 		835398F424BEDA6A0025E229 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		835398F624BEDB770025E229 /* LessonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCell.swift; sourceTree = "<group>"; };
 		835398F824BF4B230025E229 /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 				835398F824BF4B230025E229 /* LessonViewController.swift */,
 				835398F624BEDB770025E229 /* LessonCell.swift */,
 				7EAA938C24CFC6C200E59F6B /* PDFViewController.swift */,
+				7EADD46A24D2695600248ECE /* ChallengeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 			children = (
 				70278D8524BD5C55001BF270 /* Main.storyboard */,
 				7EAA938E24CFC72300E59F6B /* PDFViewer.storyboard */,
+				7EADD46624D260F100248ECE /* Lesson.storyboard */,
+				7EADD46824D268E500248ECE /* Challenge.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,7 +205,9 @@
 				70278D8924BD5C56001BF270 /* Assets.xcassets in Resources */,
 				7EAA938F24CFC72300E59F6B /* PDFViewer.storyboard in Resources */,
 				70278D8724BD5C55001BF270 /* Main.storyboard in Resources */,
+				7EADD46724D260F100248ECE /* Lesson.storyboard in Resources */,
 				7EAA939224CFC7CE00E59F6B /* nasipadang.pdf in Resources */,
+				7EADD46924D268E500248ECE /* Challenge.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EADD46B24D2695600248ECE /* ChallengeViewController.swift in Sources */,
 				70278D8424BD5C55001BF270 /* SecondViewController.swift in Sources */,
 				70278D8224BD5C55001BF270 /* FirstViewController.swift in Sources */,
 				70278D9824BD5CDF001BF270 /* Helper.swift in Sources */,
