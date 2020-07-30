@@ -51,14 +51,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="260"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r7H-Jg-OMz">
-                                                    <rect key="frame" x="10" y="10" width="150" height="180"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r7H-Jg-OMz">
+                                                    <rect key="frame" x="25" y="35" width="120" height="150"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="180" id="uho-b6-uk1"/>
+                                                        <constraint firstAttribute="height" constant="150" id="uho-b6-uk1"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate Book Value" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="527-Qp-oAF">
-                                                    <rect key="frame" x="8" y="200" width="154" height="41"/>
+                                                    <rect key="frame" x="20" y="205" width="130" height="41"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -68,16 +68,16 @@
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="527-Qp-oAF" firstAttribute="leading" secondItem="GJm-Gb-HUz" secondAttribute="leading" constant="8" id="2dv-t4-zMv"/>
-                                                <constraint firstAttribute="trailing" secondItem="527-Qp-oAF" secondAttribute="trailing" constant="8" id="7VI-DR-Yjx"/>
+                                                <constraint firstItem="527-Qp-oAF" firstAttribute="leading" secondItem="GJm-Gb-HUz" secondAttribute="leading" constant="20" id="2dv-t4-zMv"/>
+                                                <constraint firstAttribute="trailing" secondItem="527-Qp-oAF" secondAttribute="trailing" constant="20" id="7VI-DR-Yjx"/>
                                                 <constraint firstItem="KlB-ct-6Zk" firstAttribute="leading" secondItem="GJm-Gb-HUz" secondAttribute="leading" id="8HH-HI-4a3"/>
                                                 <constraint firstAttribute="trailing" secondItem="KlB-ct-6Zk" secondAttribute="trailing" id="G4s-DJ-xIP"/>
-                                                <constraint firstAttribute="trailing" secondItem="r7H-Jg-OMz" secondAttribute="trailing" constant="10" id="HTy-wq-lnK"/>
+                                                <constraint firstAttribute="trailing" secondItem="r7H-Jg-OMz" secondAttribute="trailing" constant="25" id="HTy-wq-lnK"/>
                                                 <constraint firstAttribute="bottom" secondItem="KlB-ct-6Zk" secondAttribute="bottom" id="YIl-xQ-jbp"/>
-                                                <constraint firstItem="r7H-Jg-OMz" firstAttribute="top" secondItem="GJm-Gb-HUz" secondAttribute="top" constant="10" id="ZhG-Xx-baw"/>
-                                                <constraint firstItem="r7H-Jg-OMz" firstAttribute="leading" secondItem="GJm-Gb-HUz" secondAttribute="leading" constant="10" id="dGp-Me-ViF"/>
+                                                <constraint firstItem="r7H-Jg-OMz" firstAttribute="top" secondItem="GJm-Gb-HUz" secondAttribute="top" constant="35" id="ZhG-Xx-baw"/>
+                                                <constraint firstItem="r7H-Jg-OMz" firstAttribute="leading" secondItem="GJm-Gb-HUz" secondAttribute="leading" constant="25" id="dGp-Me-ViF"/>
                                                 <constraint firstItem="KlB-ct-6Zk" firstAttribute="top" secondItem="GJm-Gb-HUz" secondAttribute="top" id="e9w-Pf-WCV"/>
-                                                <constraint firstItem="527-Qp-oAF" firstAttribute="top" secondItem="r7H-Jg-OMz" secondAttribute="bottom" constant="10" id="hDV-D3-ZAV"/>
+                                                <constraint firstItem="527-Qp-oAF" firstAttribute="top" secondItem="r7H-Jg-OMz" secondAttribute="bottom" constant="20" id="hDV-D3-ZAV"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,7 +109,7 @@
                     <navigationItem key="navigationItem" id="w8Z-cu-CTt"/>
                     <connections>
                         <outlet property="lessonCollectionView" destination="Fcj-Si-l1Y" id="nky-iY-Jfo"/>
-                        <segue destination="tDd-bg-U6R" kind="show" identifier="GoToLessonSegue" id="bVY-ag-F7j"/>
+                        <segue destination="SSW-al-6eN" kind="show" identifier="GoToLessonSegue" id="74k-FO-6TQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="niD-xn-tQC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -117,14 +117,14 @@
             <point key="canvasLocation" x="2728.985507246377" y="65.625"/>
         </scene>
         <!--Lesson-->
-        <scene sceneID="3Mh-fm-Cyi">
+        <scene sceneID="QYu-kf-8vL">
             <objects>
-                <viewControllerPlaceholder storyboardName="Lesson" id="tDd-bg-U6R" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="2fT-3m-JZv"/>
+                <viewControllerPlaceholder storyboardName="Lesson" id="SSW-al-6eN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HXg-ou-FYL"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JPu-nP-AA9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEv-Xr-itA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3491" y="66"/>
+            <point key="canvasLocation" x="3636" y="36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zjz-U0-dc4">

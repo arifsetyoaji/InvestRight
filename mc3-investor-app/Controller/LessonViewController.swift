@@ -90,5 +90,4 @@ extension LessonViewController: UIScrollViewDelegate {
         let page = (lessonScrollView.contentOffset.x)/scrollWidth
         lessonPageControl.currentPage = Int(page)
     }
-    
 }
