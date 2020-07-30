@@ -64,12 +64,16 @@
                                 </state>
                                 <connections>
                                     <action selector="openHelper:" destination="1VU-iv-Ndd" eventType="touchUpInside" id="uQ0-Z8-OcS"/>
+                                    <segue destination="tWD-kE-fpt" kind="show" id="3f5-gX-vii"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HJ8-Fm-RKw"/>
                     </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="ZiA-eW-Vqw">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="E3t-Bb-bp5"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="challengeImageView" destination="Cpe-b0-giM" id="3Rs-xx-DC7"/>
                         <outlet property="challengeSummaryLabel" destination="JMA-Z4-6Rb" id="L6b-Vw-3y8"/>
@@ -92,7 +96,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eZE-Ny-FL9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="203"/>
+            <point key="canvasLocation" x="916" y="153"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="4p3-hj-vnu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Help" id="tWD-kE-fpt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="76Y-tE-DlJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUO-5L-7WG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="188"/>
         </scene>
     </scenes>
 </document>
