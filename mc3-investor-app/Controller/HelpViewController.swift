@@ -22,6 +22,10 @@ class HelpViewController: UIViewController {
         HelpTableView.delegate = self
         HelpTableView.dataSource = self
     }
+    
+    @IBAction func cancelBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 extension HelpViewController: UITableViewDelegate, UITableViewDataSource {
