@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vb8-cu-qKk">
-                                <rect key="frame" x="0.0" y="94" width="414" height="639"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="617"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="mdp-3S-T7z"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="1hW-3n-sbM"/>
@@ -24,19 +24,12 @@
                                     <outlet property="delegate" destination="pRw-AY-kKE" id="9u1-DK-XcB"/>
                                 </connections>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="EX6-Lc-72C">
-                                <rect key="frame" x="20" y="741" width="374" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="currentPageIndicatorTintColor" red="0.33725490196078434" green="0.71372549019607845" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="pageChanged:" destination="pRw-AY-kKE" eventType="valueChanged" id="VfV-X6-cID"/>
-                                </connections>
-                            </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYZ-uz-qk4">
-                                <rect key="frame" x="20" y="786" width="374" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYZ-uz-qk4">
+                                <rect key="frame" x="20" y="684" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.33725490200000002" green="0.71372549019999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="J83-3Y-5Gq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Start Challenge">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,10 +38,32 @@
                                     <action selector="startChallenge:" destination="pRw-AY-kKE" eventType="touchUpInside" id="aKd-5f-Trc"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="EX6-Lc-72C">
+                                <rect key="frame" x="20" y="765" width="374" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="CRJ-SM-rvS"/>
+                                    <constraint firstAttribute="width" constant="374" id="nLD-jB-ZrV"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.33725490196078434" green="0.71372549019607845" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="pRw-AY-kKE" eventType="valueChanged" id="VfV-X6-cID"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EX6-Lc-72C" firstAttribute="leading" secondItem="0st-tJ-GMh" secondAttribute="leading" constant="20" id="1fU-OT-fB4"/>
+                            <constraint firstItem="0st-tJ-GMh" firstAttribute="trailing" secondItem="PYZ-uz-qk4" secondAttribute="trailing" constant="20" id="BLi-YF-Uma"/>
+                            <constraint firstItem="EX6-Lc-72C" firstAttribute="top" secondItem="PYZ-uz-qk4" secondAttribute="bottom" constant="31" id="Ncb-k0-isX"/>
+                            <constraint firstItem="0st-tJ-GMh" firstAttribute="trailing" secondItem="EX6-Lc-72C" secondAttribute="trailing" constant="20" id="ToR-kC-UH7"/>
+                            <constraint firstItem="PYZ-uz-qk4" firstAttribute="leading" secondItem="0st-tJ-GMh" secondAttribute="leading" constant="20" id="V1G-Lx-XSR"/>
+                            <constraint firstItem="0st-tJ-GMh" firstAttribute="bottom" secondItem="EX6-Lc-72C" secondAttribute="bottom" constant="11" id="dkg-T5-JnD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0st-tJ-GMh"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="lessonPageControl" destination="EX6-Lc-72C" id="swp-f2-97X"/>
                         <outlet property="lessonScrollView" destination="Vb8-cu-qKk" id="dSU-Gx-JaV"/>
