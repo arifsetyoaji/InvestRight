@@ -67,6 +67,20 @@
                                     <segue destination="tWD-kE-fpt" kind="show" id="3f5-gX-vii"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2FG-Yv-yf6">
+                                <rect key="frame" x="0.0" y="84" width="414" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25f-Pp-AdK">
+                                        <rect key="frame" x="8" y="11" width="398" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.63529411759999999" green="0.46666666670000001" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HJ8-Fm-RKw"/>
@@ -76,6 +90,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="challengeImageView" destination="Cpe-b0-giM" id="3Rs-xx-DC7"/>
+                        <outlet property="challengeResultLabel" destination="25f-Pp-AdK" id="CzQ-1t-l8B"/>
+                        <outlet property="challengeResultView" destination="2FG-Yv-yf6" id="7BW-AQ-59l"/>
                         <outlet property="challengeSummaryLabel" destination="JMA-Z4-6Rb" id="L6b-Vw-3y8"/>
                         <outlet property="challengeTitleLabel" destination="f7B-hJ-gyR" id="4O5-nM-bsw"/>
                         <outlet property="helpButton" destination="UGq-Mj-3nV" id="mck-YE-duY"/>
