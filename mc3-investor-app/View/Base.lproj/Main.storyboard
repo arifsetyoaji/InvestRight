@@ -109,7 +109,7 @@
                     <navigationItem key="navigationItem" id="w8Z-cu-CTt"/>
                     <connections>
                         <outlet property="lessonCollectionView" destination="Fcj-Si-l1Y" id="nky-iY-Jfo"/>
-                        <segue destination="SSW-al-6eN" kind="show" identifier="GoToLessonSegue" id="74k-FO-6TQ"/>
+                        <segue destination="XlL-ab-nJp" kind="show" identifier="GoToLessonSegue" id="COL-m1-9JW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="niD-xn-tQC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -117,14 +117,14 @@
             <point key="canvasLocation" x="2728.985507246377" y="65.625"/>
         </scene>
         <!--Lesson-->
-        <scene sceneID="QYu-kf-8vL">
+        <scene sceneID="Eid-Ww-7Mg">
             <objects>
-                <viewControllerPlaceholder storyboardName="Lesson" id="SSW-al-6eN" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="HXg-ou-FYL"/>
+                <viewControllerPlaceholder storyboardName="Lesson" id="XlL-ab-nJp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5Oi-Xk-Aca"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AEv-Xr-itA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWi-zM-ZbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3636" y="36"/>
+            <point key="canvasLocation" x="3246" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zjz-U0-dc4">
