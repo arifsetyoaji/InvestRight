@@ -16,6 +16,7 @@ class PDFViewController: UIViewController {
     var pdfView: PDFView!
     var document: PDFDocument!
     var highlightedArea: PDFAnnotation!
+    var value: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,12 @@ class PDFViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(extractAnnotation(notification:)), name: .PDFViewAnnotationHit, object: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ChallengeViewController {
+            destination.valueTapped = sender as? Int
+        }
     }
 }
 
@@ -36,7 +43,7 @@ extension PDFViewController: PDFDocumentDelegate {
         
         pdfView.autoScales = true
         
-        let fileUrl = Bundle.main.url(forResource: "nasipadang", withExtension: "pdf")
+        let fileUrl = Bundle.main.url(forResource: "IKPP_Report", withExtension: "pdf")
         document = PDFDocument(url: fileUrl!)
         pdfView.document = document
         pdfView.document?.delegate = self
@@ -45,7 +52,8 @@ extension PDFViewController: PDFDocumentDelegate {
     }
     
     func annotatePdf() {
-        let selections = pdfView?.document?.findString("valuing with PBV ROE method", withOptions: [.caseInsensitive])
+        let selections = pdfView?.document?.findString("Modal ditempatkan dan disetor\npenuh - 5.470.982.941 saham", withOptions: [])
+        value = 5470982941
         
         guard let pages = selections?.first?.pages else { return }
         
@@ -61,6 +69,6 @@ extension PDFViewController: PDFDocumentDelegate {
     }
     
     @objc func extractAnnotation(notification: Notification) {
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "entityTappedSegue", sender: value)
     }
 }
