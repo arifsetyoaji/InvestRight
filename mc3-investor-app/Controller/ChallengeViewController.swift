@@ -29,6 +29,10 @@ class ChallengeViewController: UIViewController {
         challengeTitleLabel.text = challengeTitle
     }
     
+    @IBAction func entityTapped(_ unwindSegue: UIStoryboardSegue) {
+        print("finished")
+    }
+    
     @IBAction func openPDF(_ sender: UIButton) {
         performSegue(withIdentifier: "GoToPDFViewer", sender: nil)
     }

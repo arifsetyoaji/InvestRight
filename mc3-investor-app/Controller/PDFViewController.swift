@@ -61,6 +61,6 @@ extension PDFViewController: PDFDocumentDelegate {
     }
     
     @objc func extractAnnotation(notification: Notification) {
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "entityTappedSegue", sender: self)
     }
 }

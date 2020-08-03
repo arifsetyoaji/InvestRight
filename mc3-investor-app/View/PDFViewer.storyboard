@@ -15,36 +15,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f0H-A3-SC4">
-                                <rect key="frame" x="0.0" y="117" width="414" height="779"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0H-A3-SC4">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="udL-us-nkJ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udL-us-nkJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the Outstanding Share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aC1-Q3-32R">
-                                        <rect key="frame" x="9" y="26" width="396" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the Outstanding Share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aC1-Q3-32R">
+                                        <rect key="frame" x="9" y="15" width="396" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.63529411764705879" green="0.46666666666666667" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aC1-Q3-32R" secondAttribute="trailing" constant="9" id="Cgh-rz-5z1"/>
+                                    <constraint firstItem="aC1-Q3-32R" firstAttribute="top" secondItem="udL-us-nkJ" secondAttribute="top" constant="15" id="RMd-w8-Uyr"/>
+                                    <constraint firstAttribute="height" constant="50" id="jDP-VD-Yl1"/>
+                                    <constraint firstItem="aC1-Q3-32R" firstAttribute="leading" secondItem="udL-us-nkJ" secondAttribute="leading" constant="9" id="tGt-Pa-Mlg"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="udL-us-nkJ" firstAttribute="leading" secondItem="6oJ-Bi-gFC" secondAttribute="leading" id="1EU-eZ-Zpy"/>
+                            <constraint firstItem="f0H-A3-SC4" firstAttribute="top" secondItem="udL-us-nkJ" secondAttribute="bottom" id="5q6-pq-Bfz"/>
+                            <constraint firstAttribute="bottom" secondItem="f0H-A3-SC4" secondAttribute="bottom" id="GYf-II-ZEN"/>
+                            <constraint firstItem="udL-us-nkJ" firstAttribute="trailing" secondItem="6oJ-Bi-gFC" secondAttribute="trailing" id="bdH-ZS-9d5"/>
+                            <constraint firstItem="f0H-A3-SC4" firstAttribute="trailing" secondItem="6oJ-Bi-gFC" secondAttribute="trailing" id="emi-p5-ZyD"/>
+                            <constraint firstItem="f0H-A3-SC4" firstAttribute="leading" secondItem="6oJ-Bi-gFC" secondAttribute="leading" id="iHc-35-Yoc"/>
+                            <constraint firstItem="udL-us-nkJ" firstAttribute="top" secondItem="6oJ-Bi-gFC" secondAttribute="top" id="kYx-Ya-7S0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6oJ-Bi-gFC"/>
                     </view>
                     <navigationItem key="navigationItem" id="baS-2k-OG2"/>
                     <connections>
                         <outlet property="pdfViewer" destination="f0H-A3-SC4" id="ef9-wa-Vxz"/>
+                        <segue destination="bKn-Ng-Tvk" kind="unwind" identifier="entityTappedSegue" unwindAction="entityTapped:" id="fcj-UP-IaV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AMP-Xq-B5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="bKn-Ng-Tvk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="876.81159420289862" y="142.63392857142856"/>
         </scene>
