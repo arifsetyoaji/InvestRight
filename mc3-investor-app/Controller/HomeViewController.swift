@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     }
     
     let lessonData : [Lesson] = [
-        Lesson(name: "Outstanding Share", image: UIImage(named: "1-lesson"), isLock: false),
+        Lesson(name: "Equity", image: UIImage(named: "1-lesson"), isLock: false),
         Lesson(name: "Find Liabilities", image: UIImage(named: "2-lesson"), isLock: true),
         Lesson(name: "Price to Equity Ratio", image: UIImage(named: "3-lesson"), isLock: true),
         Lesson(name: "Price to Book Value", image: UIImage(named: "4-lesson"), isLock: true),

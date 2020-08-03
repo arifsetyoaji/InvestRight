@@ -18,6 +18,7 @@ class ChallengeViewController: UIViewController {
     @IBOutlet weak var helpButton: UIButton!
     
     var challengeTitle: String?
+    var challengeSummary = "Find the number of equity by looking for these words:\n\nEquity attributable to owners of the parent\n\nin this case : the equity is USD 4.180.792.000"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,9 @@ class ChallengeViewController: UIViewController {
         
         submitButton.layer.cornerRadius = 10.0
         challengeTitleLabel.text = challengeTitle
+        challengeSummaryLabel.text = challengeSummary
+        challengeSummaryLabel.numberOfLines = 0
+        challengeSummaryLabel.textAlignment = .left
     }
     
     @IBAction func entityTapped(_ unwindSegue: UIStoryboardSegue) {

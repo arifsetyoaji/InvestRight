@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F47AC9024D1060F0089E18A /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F47AC8F24D1060F0089E18A /* HelpViewController.swift */; };
+		2FDD021324C7E1DA00A0F849 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDD021224C7E1DA00A0F849 /* Help.storyboard */; };
 		70278D7E24BD5C55001BF270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70278D7D24BD5C55001BF270 /* AppDelegate.swift */; };
 		70278D8024BD5C55001BF270 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70278D7F24BD5C55001BF270 /* SceneDelegate.swift */; };
 		70278D8224BD5C55001BF270 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70278D8124BD5C55001BF270 /* FirstViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F47AC8F24D1060F0089E18A /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		2FDD021224C7E1DA00A0F849 /* Help.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Help.storyboard; sourceTree = "<group>"; };
 		70278D7A24BD5C55001BF270 /* mc3-investor-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mc3-investor-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70278D7D24BD5C55001BF270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70278D7F24BD5C55001BF270 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 				835398F624BEDB770025E229 /* LessonCell.swift */,
 				7EAA938C24CFC6C200E59F6B /* PDFViewController.swift */,
 				7EADD46A24D2695600248ECE /* ChallengeViewController.swift */,
+				2F47AC8F24D1060F0089E18A /* HelpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 				7EAA938E24CFC72300E59F6B /* PDFViewer.storyboard */,
 				7EADD46624D260F100248ECE /* Lesson.storyboard */,
 				7EADD46824D268E500248ECE /* Challenge.storyboard */,
+				2FDD021224C7E1DA00A0F849 /* Help.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				7EADD46724D260F100248ECE /* Lesson.storyboard in Resources */,
 				7EAA939224CFC7CE00E59F6B /* nasipadang.pdf in Resources */,
 				7EADD46924D268E500248ECE /* Challenge.storyboard in Resources */,
+				2FDD021324C7E1DA00A0F849 /* Help.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +236,7 @@
 				70278D9A24BD5D3A001BF270 /* LessonModel.swift in Sources */,
 				835398F924BF4B230025E229 /* LessonViewController.swift in Sources */,
 				835398F724BEDB770025E229 /* LessonCell.swift in Sources */,
+				2F47AC9024D1060F0089E18A /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +381,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MRBFL7555M;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3K5Z68446;
 				INFOPLIST_FILE = "mc3-investor-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,7 +400,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MRBFL7555M;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U3K5Z68446;
 				INFOPLIST_FILE = "mc3-investor-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
