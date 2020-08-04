@@ -21,8 +21,10 @@ class ChallengeViewController: UIViewController {
     
     var challengeTitle: String?
     var challengeSummary = "Find the number of equity by looking for these words:\n\nEquity attributable to owners of the parent\n\nin this case : the equity is USD 4.180.792.000"
-    
     var valueTapped: Int?
+    var currentLesson: Lesson?
+    var helper = Helper()
+    var isContinue: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,11 +57,24 @@ class ChallengeViewController: UIViewController {
     }
     
     @IBAction func submitChallenge(_ sender: UIButton) {
-        if valueTapped == nil {
-            showResult(hidden: false, message: "Wrong answer! Please try again 🙁")
+        if !isContinue {
+            if valueTapped == nil {
+                showResult(hidden: false, message: "Wrong answer! Please try again 🙁")
+            } else {
+                showResult(hidden: false, message: "Correct! You unlock the next chapter 🥳")
+                submitButton.setTitle("Continue", for: .normal)
+                isContinue = true
+                
+                if let current = currentLesson {
+                    if var nextLesson = helper.getLesson(key: "lesson_\(current.id!+1)") {
+                        nextLesson.isLock = false
+                        helper.saveLesson(lesson: nextLesson, key: nextLesson.code!)
+                        NotificationCenter.default.post(name: NSNotification.Name("reload_data"), object: nil)
+                    }
+                }
+            }
         } else {
-            showResult(hidden: false, message: "Correct! You unlock the next chapter 🥳")
-            submitButton.setTitle("Continue", for: .normal)
+            navigationController?.popToRootViewController(animated: true)
         }
     }
     

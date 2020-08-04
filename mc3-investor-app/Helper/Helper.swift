@@ -59,3 +59,26 @@ func dateFormatter() -> String {
     dateFormatter.dateFormat = "MMM dd yyyy"
     return dateFormatter.string(from: Date())
 }
+
+
+class Helper {
+    func saveLesson(lesson: Lesson, key: String) {
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(lesson) {
+            let defaults = UserDefaults.standard
+            defaults.set(encoded, forKey: key)
+        }
+    }
+
+    func getLesson(key: String) -> Lesson? {
+        let defaults = UserDefaults.standard
+        if let savedLessons = defaults.object(forKey: key) as? Data {
+            let decoder = JSONDecoder()
+            if let decodedLesson = try? decoder.decode(Lesson.self, from: savedLessons) {
+                return decodedLesson
+            }
+        }
+        return nil
+    }
+
+}

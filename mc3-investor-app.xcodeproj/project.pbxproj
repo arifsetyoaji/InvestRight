@@ -19,6 +19,7 @@
 		70278D9824BD5CDF001BF270 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70278D9724BD5CDF001BF270 /* Helper.swift */; };
 		70278D9A24BD5D3A001BF270 /* LessonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70278D9924BD5D3A001BF270 /* LessonModel.swift */; };
 		7E93F1B124D7C92E006752BF /* IKPP_Report.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7E93F1B024D7C92E006752BF /* IKPP_Report.pdf */; };
+		7EA9CF4324D911C400E22F3E /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9CF4224D911C400E22F3E /* Lesson.swift */; };
 		7EAA938D24CFC6C200E59F6B /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAA938C24CFC6C200E59F6B /* PDFViewController.swift */; };
 		7EAA938F24CFC72300E59F6B /* PDFViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA938E24CFC72300E59F6B /* PDFViewer.storyboard */; };
 		7EAA939224CFC7CE00E59F6B /* nasipadang.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7EAA939124CFC7CE00E59F6B /* nasipadang.pdf */; };
@@ -45,6 +46,7 @@
 		70278D9724BD5CDF001BF270 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		70278D9924BD5D3A001BF270 /* LessonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonModel.swift; sourceTree = "<group>"; };
 		7E93F1B024D7C92E006752BF /* IKPP_Report.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = IKPP_Report.pdf; sourceTree = "<group>"; };
+		7EA9CF4224D911C400E22F3E /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		7EAA938C24CFC6C200E59F6B /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		7EAA938E24CFC72300E59F6B /* PDFViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDFViewer.storyboard; sourceTree = "<group>"; };
 		7EAA939124CFC7CE00E59F6B /* nasipadang.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nasipadang.pdf; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		70278D7C24BD5C55001BF270 /* mc3-investor-app */ = {
 			isa = PBXGroup;
 			children = (
+				7EA9CF4424D9225400E22F3E /* DataModel */,
 				7EAA939024CFC79B00E59F6B /* Asset */,
 				70278D9624BD5CC0001BF270 /* Helper */,
 				70278D9524BD5CB0001BF270 /* Model */,
@@ -131,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				70278D9924BD5D3A001BF270 /* LessonModel.swift */,
+				7EA9CF4224D911C400E22F3E /* Lesson.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,6 +145,13 @@
 				70278D9724BD5CDF001BF270 /* Helper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		7EA9CF4424D9225400E22F3E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		7EAA939024CFC79B00E59F6B /* Asset */ = {
@@ -236,6 +247,7 @@
 				70278D7E24BD5C55001BF270 /* AppDelegate.swift in Sources */,
 				70278D8024BD5C55001BF270 /* SceneDelegate.swift in Sources */,
 				7EAA938D24CFC6C200E59F6B /* PDFViewController.swift in Sources */,
+				7EA9CF4324D911C400E22F3E /* Lesson.swift in Sources */,
 				835398F524BEDA6A0025E229 /* HomeViewController.swift in Sources */,
 				70278D9A24BD5D3A001BF270 /* LessonModel.swift in Sources */,
 				835398F924BF4B230025E229 /* LessonViewController.swift in Sources */,
