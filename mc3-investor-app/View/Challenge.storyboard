@@ -64,7 +64,7 @@
                                 </state>
                                 <connections>
                                     <action selector="openHelper:" destination="1VU-iv-Ndd" eventType="touchUpInside" id="uQ0-Z8-OcS"/>
-                                    <segue destination="tWD-kE-fpt" kind="show" id="3f5-gX-vii"/>
+                                    <segue destination="tWD-kE-fpt" kind="presentation" id="3f5-gX-vii"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2FG-Yv-yf6">
