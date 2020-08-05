@@ -40,6 +40,12 @@ class ChallengeViewController: UIViewController {
         showResult(hidden: true, message: "")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? PDFViewController {
+            destination.currentLesson = currentLesson
+        }
+    }
+    
     @IBAction func entityTapped(_ unwindSegue: UIStoryboardSegue) {
         if let value = valueTapped {
             

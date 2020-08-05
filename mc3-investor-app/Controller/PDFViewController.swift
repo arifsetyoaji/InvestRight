@@ -12,15 +12,21 @@ import PDFKit
 class PDFViewController: UIViewController {
 
     @IBOutlet weak var pdfViewer: UIView!
+    @IBOutlet weak var instructionLabel: UILabel!
     
     var pdfView: PDFView!
     var document: PDFDocument!
     var highlightedArea: PDFAnnotation!
     var value: Int?
+    var currentLesson: Lesson?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPdf()
+        
+        if let lesson = currentLesson {
+            instructionLabel.text = "Tap the \(lesson.name!)"
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
