@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +31,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.63529411764705879" green="0.46666666666666667" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="purpleCustom"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="aC1-Q3-32R" secondAttribute="trailing" constant="9" id="Cgh-rz-5z1"/>
                                     <constraint firstItem="aC1-Q3-32R" firstAttribute="top" secondItem="udL-us-nkJ" secondAttribute="top" constant="15" id="RMd-w8-Uyr"/>
@@ -53,6 +54,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="baS-2k-OG2"/>
                     <connections>
+                        <outlet property="instructionLabel" destination="aC1-Q3-32R" id="EiF-JB-VvQ"/>
                         <outlet property="pdfViewer" destination="f0H-A3-SC4" id="ef9-wa-Vxz"/>
                         <segue destination="bKn-Ng-Tvk" kind="unwind" identifier="entityTappedSegue" unwindAction="entityTapped:" id="fcj-UP-IaV"/>
                     </connections>
@@ -63,4 +65,9 @@
             <point key="canvasLocation" x="876.81159420289862" y="142.63392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="purpleCustom">
+            <color red="0.63529411764705879" green="0.46666666666666667" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
