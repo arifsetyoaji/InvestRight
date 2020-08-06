@@ -25,7 +25,7 @@ class PDFViewController: UIViewController {
         super.viewDidLoad()
         
         if let lesson = currentLesson {
-            instructionLabel.text = "Tap the \(lesson.name!)"
+            // instructionLabel.text = "Tap the \(lesson.name!)"
             if lesson.stringSearch != nil || lesson.stringSearch != "" {
                 stringSearch = lesson.stringSearch!
                 print(stringSearch)
@@ -47,6 +47,11 @@ class PDFViewController: UIViewController {
             destination.valueTapped = sender as? Double
         }
     }
+    
+    @IBAction func close(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension PDFViewController: PDFDocumentDelegate {

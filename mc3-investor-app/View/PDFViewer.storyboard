@@ -24,18 +24,29 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udL-us-nkJ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the Outstanding Share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aC1-Q3-32R">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Financial Statement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aC1-Q3-32R">
                                         <rect key="frame" x="9" y="15" width="396" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgr-hY-G8R">
+                                        <rect key="frame" x="359" y="10" width="39" height="30"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="close:" destination="kBa-ou-FJw" eventType="touchUpInside" id="V4b-hx-23K"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="purpleCustom"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="aC1-Q3-32R" secondAttribute="trailing" constant="9" id="Cgh-rz-5z1"/>
+                                    <constraint firstItem="tgr-hY-G8R" firstAttribute="centerY" secondItem="udL-us-nkJ" secondAttribute="centerY" id="NuO-4H-I4g"/>
                                     <constraint firstItem="aC1-Q3-32R" firstAttribute="top" secondItem="udL-us-nkJ" secondAttribute="top" constant="15" id="RMd-w8-Uyr"/>
                                     <constraint firstAttribute="height" constant="50" id="jDP-VD-Yl1"/>
+                                    <constraint firstAttribute="trailing" secondItem="tgr-hY-G8R" secondAttribute="trailing" constant="16" id="r9Z-WR-V8k"/>
                                     <constraint firstItem="aC1-Q3-32R" firstAttribute="leading" secondItem="udL-us-nkJ" secondAttribute="leading" constant="9" id="tGt-Pa-Mlg"/>
                                 </constraints>
                             </view>
