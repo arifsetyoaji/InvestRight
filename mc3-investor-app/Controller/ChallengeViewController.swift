@@ -22,7 +22,7 @@ class ChallengeViewController: UIViewController {
     
     var challengeImage: UIImage?
     var challengeTitle: String?
-    var challengeSummary = "Find the number of equity by looking for these words:\n\nEquity attributable to owners of the parent\n\nin this case : the equity is USD 4.180.792.000"
+    var challengeSummary: String?
     var valueTapped: Int?
     var currentLesson: Lesson?
     var helper = Helper()
@@ -32,6 +32,12 @@ class ChallengeViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = false
         navigationItem.title = challengeTitle
+        
+        if let lesson = currentLesson {
+            if lesson.challengeDesc != nil || lesson.challengeDesc != "" {
+                challengeSummary = lesson.challengeDesc
+            }
+        }
         
         submitButton.layer.cornerRadius = 10.0
         challengeImageView.image = challengeImage

@@ -30,6 +30,7 @@ class LessonViewController: UIViewController {
         
         startChallengButton.layer.cornerRadius = 10.0
         startChallengButton.setTitle("Continue", for: .normal)
+        setIndicatorForCurrentPage()
     }
     
     override func viewDidLayoutSubviews() {
