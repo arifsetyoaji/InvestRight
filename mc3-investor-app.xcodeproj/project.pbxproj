@@ -122,9 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				70278D8524BD5C55001BF270 /* Main.storyboard */,
-				7EAA938E24CFC72300E59F6B /* PDFViewer.storyboard */,
 				7EADD46624D260F100248ECE /* Lesson.storyboard */,
 				7EADD46824D268E500248ECE /* Challenge.storyboard */,
+				7EAA938E24CFC72300E59F6B /* PDFViewer.storyboard */,
 				2FDD021224C7E1DA00A0F849 /* Help.storyboard */,
 			);
 			path = View;

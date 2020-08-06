@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,12 +32,12 @@
                                     <constraint firstAttribute="height" constant="22" id="vfC-1A-Qvf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="descriptionColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-Si-l1Y">
                                 <rect key="frame" x="20" y="218" width="374" height="644"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="mainBackground"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tqY-Aj-3hE">
                                     <size key="itemSize" width="170" height="260"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -67,6 +68,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="170" height="260"/>
                                                 </imageView>
                                             </subviews>
+                                            <color key="backgroundColor" name="cellBackground"/>
                                             <constraints>
                                                 <constraint firstItem="527-Qp-oAF" firstAttribute="leading" secondItem="GJm-Gb-HUz" secondAttribute="leading" constant="20" id="2dv-t4-zMv"/>
                                                 <constraint firstAttribute="trailing" secondItem="527-Qp-oAF" secondAttribute="trailing" constant="20" id="7VI-DR-Yjx"/>
@@ -91,7 +93,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="mainBackground"/>
                         <constraints>
                             <constraint firstItem="Fcj-Si-l1Y" firstAttribute="leading" secondItem="J9y-A6-bli" secondAttribute="leading" constant="20" id="ALc-cs-bmO"/>
                             <constraint firstItem="J9y-A6-bli" firstAttribute="trailing" secondItem="agA-ew-ld5" secondAttribute="trailing" constant="20" id="CXG-5f-1sg"/>
@@ -145,4 +147,15 @@
             <point key="canvasLocation" x="1917" y="66"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="cellBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="descriptionColor">
+            <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainBackground">
+            <color red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
