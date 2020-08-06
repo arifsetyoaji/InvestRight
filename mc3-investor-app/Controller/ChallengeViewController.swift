@@ -13,12 +13,14 @@ class ChallengeViewController: UIViewController {
     @IBOutlet weak var challengeImageView: UIImageView!
     @IBOutlet weak var challengeSummaryLabel: UILabel!
     @IBOutlet weak var challengeTitleLabel: UILabel!
+    @IBOutlet weak var challengeTitleLabel2: UILabel!
     @IBOutlet weak var openPdfButton: UIButton!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var helpButton: UIButton!
     @IBOutlet weak var challengeResultLabel: UILabel!
     @IBOutlet weak var challengeResultView: UIView!
     
+    var challengeImage: UIImage?
     var challengeTitle: String?
     var challengeSummary = "Find the number of equity by looking for these words:\n\nEquity attributable to owners of the parent\n\nin this case : the equity is USD 4.180.792.000"
     var valueTapped: Int?
@@ -32,7 +34,9 @@ class ChallengeViewController: UIViewController {
         navigationItem.title = challengeTitle
         
         submitButton.layer.cornerRadius = 10.0
+        challengeImageView.image = challengeImage
         challengeTitleLabel.text = challengeTitle
+        challengeTitleLabel2.text = challengeTitle
         challengeSummaryLabel.text = challengeSummary
         challengeSummaryLabel.numberOfLines = 0
         challengeSummaryLabel.textAlignment = .left
@@ -65,8 +69,10 @@ class ChallengeViewController: UIViewController {
     @IBAction func submitChallenge(_ sender: UIButton) {
         if !isContinue {
             if valueTapped == nil {
+                challengeResultView.backgroundColor = .red
                 showResult(hidden: false, message: "Wrong answer! Please try again 🙁")
             } else {
+                challengeResultView.backgroundColor = .systemGreen
                 showResult(hidden: false, message: "Correct! You unlock the next chapter 🥳")
                 submitButton.setTitle("Continue", for: .normal)
                 isContinue = true

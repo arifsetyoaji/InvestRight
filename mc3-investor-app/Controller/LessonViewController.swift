@@ -39,6 +39,8 @@ class LessonViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ChallengeViewController {
             if let lesson = lesson {
+                print(lesson.image!)
+                destination.challengeImage = UIImage(named: "1-lesson")
                 destination.challengeTitle = lesson.name
                 destination.currentLesson = lesson
             }
