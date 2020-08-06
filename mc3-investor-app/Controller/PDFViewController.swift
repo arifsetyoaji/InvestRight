@@ -17,16 +17,25 @@ class PDFViewController: UIViewController {
     var pdfView: PDFView!
     var document: PDFDocument!
     var highlightedArea: PDFAnnotation!
-    var value: Int?
     var currentLesson: Lesson?
+    var stringSearch: String = ""
+    var valueSearch: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupPdf()
         
         if let lesson = currentLesson {
             instructionLabel.text = "Tap the \(lesson.name!)"
+            if lesson.stringSearch != nil || lesson.stringSearch != "" {
+                stringSearch = lesson.stringSearch!
+                print(stringSearch)
+            }
+            if lesson.valueSearch != nil || lesson.valueSearch != 0 {
+                valueSearch = lesson.valueSearch
+            }
         }
+        
+        setupPdf()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -58,8 +67,7 @@ extension PDFViewController: PDFDocumentDelegate {
     }
     
     func annotatePdf() {
-        let selections = pdfView?.document?.findString("Modal ditempatkan dan disetor\npenuh - 5.470.982.941 saham", withOptions: [])
-        value = 5470982941
+        let selections = pdfView?.document?.findString(stringSearch, withOptions: [])
         
         guard let pages = selections?.first?.pages else { return }
         
@@ -75,6 +83,6 @@ extension PDFViewController: PDFDocumentDelegate {
     }
     
     @objc func extractAnnotation(notification: Notification) {
-        performSegue(withIdentifier: "entityTappedSegue", sender: value)
+        performSegue(withIdentifier: "entityTappedSegue", sender: valueSearch)
     }
 }

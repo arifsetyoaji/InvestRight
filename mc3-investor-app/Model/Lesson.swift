@@ -16,5 +16,8 @@ struct Lesson: Codable {
     let desc1: [String?]
     let desc2: [String?]
     let descImage: [String?]
+    let challengeDesc: String?
+    let stringSearch: String?
+    let valueSearch: Double?
     var isLock: Bool?
 }
