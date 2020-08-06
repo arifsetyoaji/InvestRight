@@ -43,6 +43,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="continueTapped:" destination="pRw-AY-kKE" eventType="touchUpInside" id="buX-e3-dAY"/>
                                     <action selector="startChallenge:" destination="pRw-AY-kKE" eventType="touchUpInside" id="aKd-5f-Trc"/>
                                 </connections>
                             </button>
