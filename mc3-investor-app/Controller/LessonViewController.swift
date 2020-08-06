@@ -100,11 +100,11 @@ extension LessonViewController: UIScrollViewDelegate {
                 let slide = UIView(frame: frame)
                 
                 let slideImage = UIImageView.init(image: UIImage(named: lesson.image!))
-                slideImage.frame = CGRect(x: 32, y: 28, width: 55, height: 55)
+                slideImage.frame = CGRect(x: 32, y: 37, width: 55, height: 55)
                 slideImage.contentMode = .scaleAspectFit
                 //slideImage.center = CGPoint(x: scrollWidth/2, y: scrollHeight/2 - 15)
                 
-                let slideTitle = UILabel.init(frame: CGRect(x: 95, y: 28, width: 144, height: 55))
+                let slideTitle = UILabel.init(frame: CGRect(x: 95, y: 37, width: 120, height: 55))
                 slideTitle.font = .boldSystemFont(ofSize: 17)
                 slideTitle.textAlignment = .left
                 slideTitle.numberOfLines = 0
