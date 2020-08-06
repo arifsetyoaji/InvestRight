@@ -21,7 +21,7 @@ class ChallengeViewController: UIViewController {
     
     var challengeTitle: String?
     var challengeSummary: String?
-    var valueTapped: Int?
+    var valueTapped: Double?
     var currentLesson: Lesson?
     var helper = Helper()
     var isContinue: Bool = false

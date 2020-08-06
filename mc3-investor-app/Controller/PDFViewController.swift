@@ -19,7 +19,7 @@ class PDFViewController: UIViewController {
     var highlightedArea: PDFAnnotation!
     var currentLesson: Lesson?
     var stringSearch: String = ""
-    var valueSearch: Int?
+    var valueSearch: Double?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +44,7 @@ class PDFViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ChallengeViewController {
-            destination.valueTapped = sender as? Int
+            destination.valueTapped = sender as? Double
         }
     }
 }
